@@ -5,17 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Vanilla Modal</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <button id="modal-button" class="button">Click Me!</button>
-
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Modal text...</p>
+  <div class="wrapper">
+    
+    <button id="modal-button" class="button">Click Me!</button>
+    
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+          <h2>Hi Mom</h2>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Eveniet quas iusto quam odio veritatis! Minus nulla illo repellendus 
+            culpa porro magnam laudantium assumenda quasi totam. 
+            In accusamus corrupti voluptas dolores?
+          </p>
+        </div>
+        <div class="modal-footer">
+          <p>Footer ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+      </div>
     </div>
+    
   </div>
   
   <script src="main.js"></script>

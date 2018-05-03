@@ -4,19 +4,41 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   line-height: 1.5;
+  font-weight: 300;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: honeydew;
 }
 
 .button {
   background: #6BC35E;
-  padding: 1em 2.5em;
+  padding: 1em 2em;
+  font-size: 2em;
   color: honeydew;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  width: 80%;
+  max-width: 750px;
+  border: none;
+  margin: auto;
+  text-align: center;
+  margin-top: 10%;
 }
 
-.button:hover {
+.button:hover, .button:focus {
   background: #7379F1;
+  cursor: pointer;
+  box-shadow: 0px 15px 20px rgba(115, 121, 241, .4);
+  color: #fff;
 }
 
 .modal {
@@ -34,13 +56,18 @@ body {
 .modal-content {
   z-index: 2;
   position: relative;
-  background-color: #f4f4f4;
+  background-color: honeydew;
   margin: 20% auto;
   padding: 20px;
   width: 60%;
   box-shadow: 2px 3px 10px 2px rgba(0,0,0,.1), 0 7px 15px 2px rgba(0,0,0,.1);
   animation-name: modalopen;
   animation-duration: .5s;
+}
+
+.modal-header {
+  position: relative;
+  margin-top: 15px;
 }
 
 .close {
@@ -57,6 +84,16 @@ body {
   cursor: pointer;
   color: #454545;
 }
+
+.modal-body {
+  margin-top: 15px;
+}
+
+.modal-footer {
+  margin: 15px 0 5px;
+}
+
+
 
 @keyframes modalopen{
   from{opacity: 0}
